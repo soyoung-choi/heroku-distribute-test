@@ -1,0 +1,22 @@
+{
+  "name": "heroku-distribute-test",
+  "version": "1.0.0",
+  "description": "react, typescript, express 사용하여 heroku 자동 배포하기",
+  "main": "index.js",
+  "scripts": {
+    "heroku-prebuild": "cd client && npm ci && npm run build && mv build ../server", 
+    "start": "cd server && npm ci && tsc && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soyoung-choi/heroku-distribute-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soyoung-choi/heroku-distribute-test/issues"
+  },
+  "homepage": "https://github.com/soyoung-choi/heroku-distribute-test#readme"
+}
